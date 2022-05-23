@@ -12,7 +12,6 @@ export class FeedbacksController{
         const nodemailerMailAdapter = new NodemailerMailAdapter()
 
         const createFeedbacksService = new CreateFeedbacksService(prismaFeedbacksRepository,nodemailerMailAdapter)
-
         await createFeedbacksService.execute({
             type,
             comment,
