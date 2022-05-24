@@ -26,6 +26,8 @@
   },
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
+    "build": "yarn tsc",
+    "start": "node dist/server.js",
     "test": "jest"
   }
 }
